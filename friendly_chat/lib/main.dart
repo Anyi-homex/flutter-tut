@@ -8,18 +8,6 @@ void main() {
   );
 }
 
-final ThemeData kIOSTheme = ThemeData(
-  primarySwatch: Colors.orange,
-  primaryColor: Colors.grey[100],
-);
-
-final ThemeData kDefaultTheme = ThemeData(
-  colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.purple)
-      .copyWith(secondary: Colors.orangeAccent[400]),
-);
-
-String _name = 'Your Name';
-
 class FriendlyChatApp extends StatelessWidget {
   const FriendlyChatApp({
     Key? key,
@@ -201,3 +189,15 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
     super.dispose();
   }
 }
+
+final ThemeData kIOSTheme = ThemeData(
+  primarySwatch: Colors.orange,
+  primaryColor: Colors.grey[100],
+);
+
+final ThemeData kDefaultTheme = ThemeData(
+  colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.purple)
+      .copyWith(secondary: Colors.orangeAccent[400]),
+);
+
+String _name = 'Your Name';
